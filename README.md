@@ -1,20 +1,20 @@
-///////// E - UI UNIT \\\\\\\\\\
-
 # Happy-Birthday-App-Music-Player-
 import your songs in assets also you can change the icon of the app,texts in the apps, album & artist & songs name & icon ;)
 
-Warning:
+#Warning:
 put the songs in albums folders
 
-Requirements
+#Requirements
 
 node.js
 electron
 
-Commands:
+#Commands:
+
 npm install(for packages)
 
-exe Compiler:
+#exe Compiler:
 npm install --save-dev electron-packager
+
 npx electron-packager . MyPlayer --platform=win32 --arch=x64
 
