@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>HBD Target</title>
+  <link rel="icon" href="assets/icon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome-screen">
+    <canvas id="liquid-bg"></canvas>
+    <div class="welcome-text">
+      <h1>Happy Birthday Target</h1>
+      <h2>Wish You Best</h2>
+    </div>
+  </div>
+
+  <!-- Player -->
+  <div class="player" style="display:none;">
+    <canvas id="player-bg"></canvas>
+
+    <div class="now-playing" id="now-playing-bar">
+      <img class="album-cover" src="" alt="cover">
+      <div class="album-info">
+        <h2 id="album-name">آلبوم</h2>
+        <h3 id="artist-name">خواننده</h3>
+        <p>HBD Target</p>
+      </div>
+    </div>
+
+    <div class="album-switcher">
+      <button onclick="switchAlbum(0)">Album1</button>
+      <button onclick="switchAlbum(1)">Album2</button>
+      <button onclick="switchAlbum(2)">Album3</button>
+    </div>
+
+    <ul class="playlist"></ul>
+
+    <div class="controls-container">
+      <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play">▶️</button>
+        <button id="next">⏭</button>
+      </div>
+
+      <div class="progress-container">
+        <span class="time current">0:00</span>
+        <progress value="0" max="100"></progress>
+        <span class="time duration">0:00</span>
+      </div>
+
+      <div class="volume-control">
+        <input type="range" min="0" max="1" step="0.01" value="0.5" id="volume">
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
