@@ -79,6 +79,7 @@
             <li>App texts</li>
             <li>Album & artist names</li>
             <li>Songs & their icons</li>
+            <li>Give it to someone who deserves it</li>
         </ul>
     </li>
 </ul>
